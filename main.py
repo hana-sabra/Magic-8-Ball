@@ -27,3 +27,21 @@ response = get_random_response()
 guess= get_user_guess()
 print(response)
 print(guess)
+
+def display_response(response):
+    print("\n the magic 8-ball says:",response,"\n")
+
+def play_again():
+    while true:
+        choice=input("do you want to ask another question?(yes/no):").strip().lower()
+        if choice=="yes":
+            return True 
+        elif choice=="no":
+            print("thanks for playing!goodbye!")
+            return False
+        else:
+            print("please type "yes"or"no".")
+            
+    
+        
+        
